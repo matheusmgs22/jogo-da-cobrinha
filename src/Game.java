@@ -22,7 +22,7 @@ public class Game extends Canvas implements Runnable,KeyListener{
 
     public int spd = 10;
 
-    public int frameSpd = 20;
+    public int frameSpd = 10;
 
      public Game(){
         this.setPreferredSize(new Dimension(240, 240));
@@ -154,59 +154,34 @@ public class Game extends Canvas implements Runnable,KeyListener{
         }
     }
 
-    public void KeyPressed(KeyEvent e){
-        if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            right = true;
-            left = false;
-            up = false;
-            down = false;
-        } else if(e.getKeyCode() == KeyEvent.VK_LEFT){
-            left = true;
-            right = false;
-            up = false;
-            down = false;
-        }else if(e.getKeyCode() == KeyEvent.VK_UP) {
-            up = true;
-            left = false;
-            right = false;
-            down = false;
-        }else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-            down = true;
-            left = false;
-            right = false;
-            up = false;
-        }
-    }
-
     @Override
     public void keyTyped(KeyEvent e) {
-        if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            right = true;
-            left = false;
-            up = false;
-            down = false;
-        } else if(e.getKeyCode() == KeyEvent.VK_LEFT){
-            left = true;
-            right = false;
-            up = false;
-            down = false;
-        }else if(e.getKeyCode() == KeyEvent.VK_UP) {
-            up = true;
-            left = false;
-            right = false;
-            down = false;
-        }else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-            down = true;
-            left = false;
-            right = false;
-            up = false;
-        }
+        
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-        // TODO Auto-generated method stub
-        
+        if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            right = true;
+            left = false;
+            up = false;
+            down = false;
+        } else if(e.getKeyCode() == KeyEvent.VK_LEFT){
+            left = true;
+            right = false;
+            up = false;
+            down = false;
+        }else if(e.getKeyCode() == KeyEvent.VK_UP) {
+            up = true;
+            left = false;
+            right = false;
+            down = false;
+        }else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+            down = true;
+            left = false;
+            right = false;
+            up = false;
+        }
     }
 
     @Override
